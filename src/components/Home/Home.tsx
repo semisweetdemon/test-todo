@@ -6,7 +6,7 @@ import { SubmitHandler, useForm } from "react-hook-form"
 import { Todo } from "../components/Todo"
 
 export const Home: React.FC = () => {
-	const { data, status } = useGetAllTodoQuery()
+	const { data } = useGetAllTodoQuery()
 	const [postTodo] = usePostTodoMutation()
 
 	const { register, handleSubmit, reset } = useForm<Todo.PostTodoReq>()

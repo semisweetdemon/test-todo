@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 namespace Todo {
 	interface Todo {
 		_id?: number
@@ -6,9 +8,9 @@ namespace Todo {
 	}
 
 	type GetAllTodoReq = void
-	type GetAllTodoRes = Todo.Todo[]
+	type GetAllTodoRes = Todo[]
 
-	type PostTodoReq = Todo.Todo
+	type PostTodoReq = Todo
 	type PostTodoRes = void
 
 	type PutTodoUpload = {
@@ -17,7 +19,7 @@ namespace Todo {
 	}
 
 	type PutTodoReq = {
-		data: Todo.Todo
+		data: Todo
 		id: number
 	}
 	type PutTodoRes = void

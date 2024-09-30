@@ -10,7 +10,7 @@ interface ITodo {
 
 export const Todo: React.FC<ITodo> = ({ item }) => {
 	const [putTodo] = usePutTodoMutation()
-	const { register, handleSubmit, setValue, reset } = useForm<Todo.PutTodoUpload>({
+	const { register, handleSubmit, setValue } = useForm<Todo.PutTodoUpload>({
 		defaultValues: {
 			title: item.title,
 			image: item.image,
