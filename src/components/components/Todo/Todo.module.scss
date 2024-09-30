@@ -1,0 +1,40 @@
+.todo {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	img {
+		width: 100%;
+		height: 100vh;
+	}
+
+	button {
+		padding: 5px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	input {
+		border: 1px solid black;
+		padding: 10px;
+		outline: none;
+
+		&:focus {
+			border-color: purple;
+		}
+	}
+
+	button {
+		border: 1px solid black;
+		padding: 10px;
+		outline: none;
+
+		&:active {
+			border-color: purple;
+		}
+	}
+}
